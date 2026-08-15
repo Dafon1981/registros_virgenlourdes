@@ -1,0 +1,16 @@
+.personnel-documents-section { margin-top: 2.5rem; padding-top: 1.6rem; border-top: 1px solid var(--line, #dce9e6); }
+.personnel-document-controls { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .75rem; align-items: end; margin: 1rem 0; }
+.personnel-document-controls label, .personnel-profile-grid label { display: grid; gap: .32rem; color: #35525a; font-size: .8rem; font-weight: 700; }
+.personnel-document-controls input, .personnel-document-controls select, .personnel-profile-grid input { min-height: 2.65rem; border: 1px solid #c9dad7; border-radius: .7rem; padding: .55rem .7rem; background: #fff; color: #183640; }
+.personnel-documents-layout { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(18rem, .9fr); gap: 1rem; align-items: start; }
+.personnel-contract-list td:first-child { text-align: center; }
+.contract-check { width: 1.2rem; height: 1.2rem; accent-color: #087f78; cursor: pointer; }
+.contract-status { display: inline-flex; border-radius: 999px; padding: .25rem .55rem; font-size: .73rem; font-weight: 800; background: #fff0cf; color: #87580c; }
+.contract-status.firmado { background: #d9f5e9; color: #06744d; }
+.contract-presence { color: #627a80; font-size: .78rem; }
+.contract-presence.present { color: #087f78; font-weight: 700; }
+.personnel-profile-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; margin: .85rem 0; }
+.personnel-fixed-option { display: flex; align-items: center; gap: .5rem; color: #35525a; font-size: .86rem; font-weight: 700; }
+.personnel-fixed-option input { width: 1rem; height: 1rem; accent-color: #087f78; }
+.personnel-profile-panel .empty { margin: 1rem 0; }
+@media (max-width: 780px) { .personnel-document-controls, .personnel-documents-layout { grid-template-columns: 1fr; } .personnel-profile-grid { grid-template-columns: 1fr; } }
