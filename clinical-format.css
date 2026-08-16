@@ -1,0 +1,14 @@
+.clinical-format-form { display: grid; gap: 14px; }
+.format-topbar { display: grid; grid-template-columns: repeat(5, minmax(130px, 1fr)); gap: 10px; padding: 12px; border: 1px solid var(--border); border-radius: 14px; background: var(--card); }
+.format-topbar label { display: grid; gap: 6px; font-size: 12px; font-weight: 700; color: var(--muted); }
+.format-topbar input, .format-topbar select, .clinical-time-input { min-height: 34px; }
+.clinical-format-table table { min-width: 1280px; }
+.clinical-format-table th { white-space: nowrap; background: #d9c8f0; color: #30204a; }
+.clinical-format-table th:nth-child(5), .clinical-format-table th:nth-child(6), .clinical-format-table th:nth-child(10) { background: #d8f0d9; color: #174123; }
+.clinical-format-table td { vertical-align: middle; }
+.clinical-time-input { width: 106px; border-radius: 7px; border: 1px solid var(--border); padding: 4px 6px; background: var(--input); color: var(--text); }
+.module-chip { display: inline-block; padding: 3px 7px; border-radius: 5px; font-size: 11px; font-weight: 800; white-space: nowrap; }
+.module-1 { background: #ff6868; color: #541515; }.module-2 { background: #f3e25c; color: #584b00; }.module-3 { background: #8ee18c; color: #144d1a; }.module-4 { background: #a9c9fb; color: #173a6a; }
+[data-theme="dark"] .clinical-format-table th { background: #503f71; color: #fbf5ff; }
+[data-theme="dark"] .clinical-format-table th:nth-child(5), [data-theme="dark"] .clinical-format-table th:nth-child(6), [data-theme="dark"] .clinical-format-table th:nth-child(10) { background: #315e39; color: #ecfff0; }
+@media (max-width: 760px) { .format-topbar { grid-template-columns: 1fr 1fr; }.clinical-format-table { margin: 0 -10px; }.clinical-format-table table { font-size: 12px; } }
