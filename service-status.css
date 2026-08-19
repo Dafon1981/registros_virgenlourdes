@@ -1,0 +1,8 @@
+.service-status { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: .45rem; }
+.service-pill { display: inline-flex; align-items: center; gap: .36rem; padding: .38rem .6rem; border: 1px solid var(--border, #d6e1df); border-radius: 999px; background: var(--surface, #fff); color: var(--muted, #536463); font-size: .76rem; font-weight: 700; white-space: nowrap; }
+.service-pill i { width: .52rem; height: .52rem; border-radius: 50%; background: #f0b447; box-shadow: 0 0 0 3px color-mix(in srgb, #f0b447 18%, transparent); }
+.service-pill.online i { background: #159c72; box-shadow: 0 0 0 3px color-mix(in srgb, #159c72 18%, transparent); }
+.service-pill.error i { background: #d65a63; box-shadow: 0 0 0 3px color-mix(in srgb, #d65a63 18%, transparent); }
+.service-check { width: 2rem; height: 2rem; padding: 0; border: 1px solid var(--border, #d6e1df); border-radius: 50%; background: var(--surface, #fff); color: inherit; cursor: pointer; font-size: 1rem; }
+.service-check:disabled { opacity: .6; cursor: wait; }
+@media (max-width: 760px) { .service-status { justify-content: flex-start; width: 100%; order: 3; } .hero-actions { flex-wrap: wrap; } }

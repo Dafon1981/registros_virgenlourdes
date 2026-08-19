@@ -1,0 +1,39 @@
+.paste-form {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 130px auto;
+  gap: 12px;
+  align-items: end;
+}
+
+.paste-input { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+
+.sequence-chip, .turno-chip {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 4px 8px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .04em;
+}
+
+.sequence-chip { background: #e5f5f1; color: #08786f; }
+.turno-chip { background: #edf0ff; color: #4453a2; }
+
+.shift-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.shift-card { overflow: hidden; }
+.shift-card .card-topline { gap: 8px; align-items: center; }
+.shift-card .shift-meta { display: flex; gap: 7px; align-items: center; flex-wrap: wrap; }
+
+.share-btn { height: 32px; padding: 0 10px; font-size: 12px; }
+
+@media (max-width: 760px) {
+  .paste-form, .shift-grid { grid-template-columns: 1fr; }
+  .shift-card .card-topline { align-items: flex-start; flex-direction: column; }
+}

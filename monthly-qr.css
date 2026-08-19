@@ -1,0 +1,13 @@
+.monthly-card { margin-top: 18px; }
+.monthly-card h3 { margin: 0 0 4px; font-family: "Fraunces", Georgia, serif; color: #153c54; }
+.monthly-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 16px; }
+.monthly-person { padding: 16px; border: 1px solid #dce8e8; border-radius: 14px; background: #fff; }
+.monthly-person h4 { margin: 0; color: #153c54; font-size: 15px; }
+.monthly-person p { margin: 3px 0 11px; font-size: 12px; color: #6e838a; }
+.monthly-days { display: flex; flex-wrap: wrap; gap: 7px; }
+.monthly-days span { padding: 6px 8px; background: #edf7f5; border-radius: 8px; color: #176a65; font-size: 12px; font-weight: 700; }
+.qr-wrap { display: grid; grid-template-columns: minmax(0, 1fr) 290px; gap: 28px; align-items: center; margin-top: 22px; }
+.qr-card { padding: 22px; text-align: center; border: 1px solid #dce8e8; background: linear-gradient(145deg, #fff, #eff8f7); border-radius: 20px; }
+.qr-card img { width: 230px; height: 230px; max-width: 100%; border-radius: 10px; background: white; padding: 8px; }
+.mobile-link { display: inline-flex; max-width: 100%; overflow-wrap: anywhere; color: #0b766e; font-weight: 700; }
+@media (max-width: 760px) { .monthly-grid, .qr-wrap { grid-template-columns: 1fr; } .qr-card { order: -1; } }
