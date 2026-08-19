@@ -1,0 +1,28 @@
+#pdfPreview {
+  grid-column: 1 / -1;
+  padding: 14px;
+  border: 1px solid #d7e5e2;
+  background: #f8fcfb;
+  border-radius: 12px;
+  color: #365464;
+  font-size: 13px;
+}
+
+#pdfPreview canvas {
+  display: block;
+  width: min(100%, 720px);
+  height: auto;
+  margin: 0 auto 12px;
+  border: 1px solid #cfdedb;
+  background: #fff;
+}
+
+#pdfPreview summary {
+  cursor: pointer;
+  color: #08786f;
+  font-weight: 700;
+}
+
+#pdfPreview details p {
+  line-height: 1.55;
+}
